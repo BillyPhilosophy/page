@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="GBK">-->
+    <meta charset="utf8">
+    <title>失效红包</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/invalid_red_envelopes.css">
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        }
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="content1_1">
+       
+        <!-- 未领取 -->
+        <div class="qiehuan">
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;">已过期</a></div>
+            </div>
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 建军90周年活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;">已过期</a></div>
+            </div>
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 建军90周年活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;">已过期</a></div>
+            </div>
+        </div>
+
+        
+    </section>
+
+   
+   
+</body>
+
+</html>

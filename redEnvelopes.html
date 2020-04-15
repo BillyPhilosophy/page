@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="GBK">-->
+    <meta charset="utf8">
+    <title>礼券红包</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/red_envelopes.css">
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        }
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content1_1">
+        <ul class="clearfix border tab">
+            <li class="active first">我的红包</li>
+            <li class="first">我的礼券</li>
+        </ul>
+        <!-- 红包 -->
+        <section class="content1_2">
+            <ul class="clearfix border tab2">
+                <li class="active first">未领取</li>
+                <li class="first">已领取</li>
+            </ul>
+            <!-- 未领取 -->
+            <div class="qiehuan">
+                <div class="have_data" style="display: none;">
+                    <div class="qiehuan_content">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon">
+                            <span class="first">￥</span>
+                            <span class="second">10</span>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                            <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class=" promptly"><a href="javascript:;">立即领取</a></div>
+                </div>
+                <div class="qiehuan_content">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon">
+                            <span class="first">￥</span>
+                            <span class="second">10</span>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span></span>红包来源： 建军90周年活动</div>
+                            <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class=" promptly"><a href="javascript:;">立即领取</a></div>
+                </div>
+                <div class="qiehuan_content">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon">
+                            <span class="first">￥</span>
+                            <span class="second">10</span>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span></span>红包来源： 建军90周年活动</div>
+                            <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class=" promptly"><a href="javascript:;">立即领取</a></div>
+                </div>
+                </div>
+                <div class="no_data">
+                    <img src="./img/default_bg.png" alt="">
+                    <p>没有可领用的红包，去<span >活动中心赚取红包</span>吧</p>
+                </div>
+                <div class="check">
+                    <a href="javascript:;"><span>查看失效红包 >></span></a>
+                </div>
+            </div>
+    
+            <!-- 第二个的切换 已经领取-->
+            <div class="" style="display:none">
+                <div class="text_number">已领取<span style="color:#fb5c5f">17</span>个红包，共计<span
+                        style="color:#fb5c5f">26.21</span>元</div>
+                <div class="qiehuan">
+                    <div class="qiehuan_content" style="margin-top:0px;opacity:0.7">
+                        <div class="icon"></div>
+                        <div class="text" style="margin-left:0.35rem">
+                            <div class="text_icon">
+                                <span class="first">￥</span>
+                                <span class="second">0.02</span>
+                            </div>
+                        </div>
+                        <div class="dashed" style="margin-left:0.5rem"></div>
+                        <div class="hongbao">
+                            <div class="hongbao_text">
+                                <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                                <div class="second"><span></span>有效期<i>2019.12.21 14:20:21</i>至<p class="text_time">
+                                        2020.12.21 14:20:21</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qiehuan">
+                    <div class="qiehuan_content" style="opacity:0.7">
+                        <div class="icon"></div>
+                        <div class="text" style="margin-left:0.35rem">
+                            <div class="text_icon">
+                                <span class="first">￥</span>
+                                <span class="second">0.02</span>
+                            </div>
+                        </div>
+                        <div class="dashed" style="margin-left:0.5rem"></div>
+                        <div class="hongbao">
+                            <div class="hongbao_text">
+                                <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                                <div class="second"><span></span>有效期<i>2019.12.21 14:20:21</i>至<p class="text_time">
+                                        2020.12.21 14:20:21</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qiehuan">
+                        <div class="qiehuan_content" style="opacity:0.7">
+                            <div class="icon"></div>
+                            <div class="text" style="margin-left:0.35rem">
+                                <div class="text_icon">
+                                    <span class="first">￥</span>
+                                    <span class="second">0.02</span>
+                                </div>
+                            </div>
+                            <div class="dashed" style="margin-left:0.5rem"></div>
+                            <div class="hongbao">
+                                <div class="hongbao_text">
+                                    <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                                    <div class="second"><span></span>有效期<i>2019.12.21 14:20:21</i>至<p class="text_time">
+                                            2020.12.21 14:20:21</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qiehuan">
+                            <div class="qiehuan_content" style="opacity:0.7">
+                                <div class="icon"></div>
+                                <div class="text" style="margin-left:0.35rem">
+                                    <div class="text_icon">
+                                        <span class="first">￥</span>
+                                        <span class="second">0.02</span>
+                                    </div>
+                                </div>
+                                <div class="dashed" style="margin-left:0.5rem"></div>
+                                <div class="hongbao">
+                                    <div class="hongbao_text">
+                                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                                        <div class="second"><span></span>有效期<i>2019.12.21 14:20:21</i>至<p class="text_time">
+                                                2020.12.21 14:20:21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qiehuan_content" style="opacity:0.7">
+                                <div class="icon"></div>
+                                <div class="text" style="margin-left:0.35rem">
+                                    <div class="text_icon">
+                                        <span class="first">￥</span>
+                                        <span class="second">0.02</span>
+                                    </div>
+                                </div>
+                                <div class="dashed" style="margin-left:0.5rem"></div>
+                                <div class="hongbao">
+                                    <div class="hongbao_text">
+                                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                                        <div class="second"><span></span>有效期<i>2019.12.21 14:20:21</i>至<p class="text_time">
+                                                2020.12.21 14:20:21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="null">——— 没有更多红包了 ———</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 礼券 -->
+        <section class="content1_2" style="display: none;">
+            <ul class="clearfix border tab2">
+                <li class="active first">未使用</li>
+                <li class="first">已使用</li>
+            </ul>
+            <!-- 未使用 -->
+        <div class="qiehuan1">
+            <div class="have_data">
+                <div class="qiehuan_content1">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon1">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                        <p class="third">满返券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <!-- <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div> -->
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span style="float:left;margin-top:0.2rem;"></span><i
+                                    class="justify">适用产品：汇添富中证互联网医疗指数（LOF）A (35687)</i></div>
+                            <div class="second"><span></span>满1000返10</div>
+                            <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;">未生效</a></div>
+            </div>
+            <div class="qiehuan_content1">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon1">
+                        <span class="first">+</span>
+                        <span class="second">2.0<i style="font-size:0.75rem">%</i></span>
+                        <p class="third" style="margin-left:0.2rem">加息券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao_text">
+                        <div class="four"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="five"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;" style="margin-top:0.9rem;">立即使用</a></div>
+            </div>
+            <div class="qiehuan_content1">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon1">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                        <p class="third">满返券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <!-- <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div> -->
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span style="float:left;margin-top:0.2rem;"></span><i
+                                    class="justify">适用产品：汇添富全球互联(25437)</i></div>
+                            <div class="second"><span></span>满1000返10</div>
+                            <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class=" promptly"><a href="javascript:;">未生效</a></div>
+            </div>
+            </div>
+            <div class="no_data" style="display: none;">
+                <img src="./img/default_bg.png" alt="">
+                <p>没有可使用的礼券，去<span>活动中心赚取礼券</span>吧</p>
+            </div>
+                
+            <div class="check">
+                <a href="javascript:;"><span>查看过期礼券 >></span></a>
+            </div>
+        </div>
+
+        <!-- 第二个的切换 已经使用-->
+        <div class="" style="display:none">
+            <div class="qiehuan1">
+                <div class="qiehuan_content1" style="opacity:0.7">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon1">
+                            <span class="first">￥</span>
+                            <span class="second">42</span>
+                            <p class="third">满返券</p>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao">
+                            <div class="hongbao_text">
+                                <div class="first_repeat"><span></span>满1200返42</i></div>
+                                <div class="second"><span></span>适用类型：近期热点基金</div>
+                                <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qiehuan_content1" style="opacity:0.7">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon1">
+                            <span class="first">￥</span>
+                            <span class="second">42</span>
+                            <!-- <span class="second">42<i style="font-size:0.75rem">%</i></span> -->
+                            <p class="third" style="margin-left:0.2rem">满返券</p>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first_repeat"><span></span>满1200返42</i></div>
+                            <div class="second"><span></span>适用类型：近期热点基金</div>
+                            <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="qiehuan_content1" style="opacity:0.7">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <div class="text_icon1">
+                            <span class="first">￥</span>
+                            <span class="second">42</span>
+                            <p class="third">满返券</p>
+                        </div>
+                    </div>
+                    <div class="dashed"></div>
+                    <div class="hongbao">
+                        <div class="hongbao">
+                            <div class="hongbao_text">
+                                <div class="first_repeat"><span></span>满1200返42</i></div>
+                                <div class="second"><span></span>适用类型：近期热点基金</div>
+                                <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="null">——— 没有更多礼券了 ———</div>
+        </div>
+        </section>
+    </div>
+    
+
+    <!--     <div class="footer_fiexd">
+			<ul>
+				<li><a href="javascript:;">历史定投</a></li>
+				<li><a href="javascript:;">+新增定投</a></li>
+			</ul>
+		</div> -->
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script>
+        $(function () {
+            // 更多
+            // $('.upfold').click(function () {
+            //     $(this).prev().toggleClass('ellipsis');
+            //     $(this).toggleClass('pack-up');
+            // });
+            $('.tab li').click(function () {
+                if ($(this).hasClass("active")) {
+                    return;
+                }
+                $(this).addClass("active").siblings().removeClass('active');
+                $(this).parent().siblings().hide().eq($(this).index()).show()
+            });
+            $('.tab2 li').click(function () {
+                if ($(this).hasClass("active")) {
+                    return;
+                }
+                $(this).addClass("active").siblings().removeClass('active');
+                // $(this).parent().next("qiehuan").hide().eq($(this).index()).show();
+                $(this).parent().siblings().hide().eq($(this).index()).show()
+
+            });
+            // $(".second").click(function () {
+            //     window.location.href = "asset.html";
+            // })
+
+        })
+    </script>
+</body>
+
+</html>

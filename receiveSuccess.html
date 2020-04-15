@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="GBK">-->
+    <meta charset="utf8">
+    <title>领取成功</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/result.css">
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        }
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body style="background:#fff">
+<div class="main">
+    <div class="head">
+        <div class="icon">
+             <div class="number">3.88<span style="font-size:0.9rem">元</span></div>
+             <div class="text">恭喜您红包领取成功</div>
+             <div class="text2"><a href="javascript:;">请在现金宝账户查看</a></div>
+        </div>
+    </div>
+    <div class="finish"><a href="javascript:;">完成</a></div>
+</div>
+</body>
+
+</html>

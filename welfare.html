@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="GBK">-->
+    <meta charset="utf8">
+    <title>福利</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/welfare.css">
+
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        }
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="text">你有<span class="number">5</span>个红包、<span class="number">2</span> 张卡券待领取</div>
+        </div>
+        <div class="aircle">
+            <div class="first">
+                <a href="javascript:;">
+                    <div class="icon">
+                        <div class="icon_text">待领取</div>
+                    </div>
+                    <div class="red_text">红包</div>
+                </a>
+            </div>
+            <div class="second">
+                <a href="javascript:;">
+                    <div class="icon">
+                        <div class="icon_text">待领取</div>
+                    </div>
+                    <div class="red_text">卡券</div>
+                </a>
+            </div>
+            <div class="third">
+                <a href="javascript:;">
+                    <div class="icon">
+                        <div class="icon_text">待领取</div>
+                    </div>
+                    <div class="red_text">添富币</div>
+                </a>
+            </div>
+        </div>
+        <div class="active">
+            <div class="text">获取福利</div>
+            <div class="much"><a href="javascript:;">更多活动</a></div>
+        </div>
+        <div>
+            <a href="javascript:;">
+                <div class="slide"></div>
+            </a>
+            <div class="five_active">
+                <div class="active_text">汇添富新手活动</div>
+                <div class="active_time">2019.09.12-2019.12.01</div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:;">
+                <div class="slide2"></div>
+            </a>
+            <div class="five_active">
+                <div class="active_text">添富星期五活动</div>
+                <div class="active_time">2019.09.12-2019.12.01</div>
+            </div>
+        </div>
+        <div>
+            <a href="javascript:;">
+                <div class="slide3"></div>
+            </a>
+            <div class="five_active">
+                <div class="active_text">添富盈定投活动</div>
+                <div class="active_time">2019.09.12-2019.12.01</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+</body>
+
+</html>

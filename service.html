@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>服务</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/service.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        };
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header_inside">
+                <h2><span class="translucent70">总资产(元)</span><span class="figure1 isshow">86366.91</span><span
+                        class="figure1 enshow" style="display: none;vertical-align: middle;
+                margin-right: .5rem;">****</span><i class="eyes"></i></h2>
+                <h2><span class="translucent70">现金宝(元)</span><span class="isshow figure2">66864.12</span><span
+                        class="enshow figure2" style="display: none;vertical-align: middle;
+                margin-right: .5rem;">****</span><span class="translucent70">(昨日收益<em
+                            style="font-style: normal; color: #fff; vertical-align: middle;"
+                            class="isshow figure3">+6.78</em><em style="font-style: normal; color: #fff; vertical-align: middle;
+                display: none;" class="enshow figure3">****</em>)</span></h2>
+            </div>
+            <a href="JavaScript:;" class="arrow_r"></a>
+        </div>
+        <div class="fc_btn">
+            <a href="#">
+                <i></i>
+                <p>充值取现</p>
+            </a>
+            <a href="#">
+                <i></i>
+                <p>买基金</p>
+            </a>
+            <a href="#">
+                <i></i>
+                <p>买组合</p>
+            </a>
+            <a href="#">
+                <i></i>
+                <p>账户管理</p>
+            </a>
+        </div>
+        <div class="shuffling">
+            <div class="radio_play">
+                <!-- <div style="width: 100%;height: 0.5rem;background-color: #f6f6f6;"></div> -->
+                <ul class="wrap">
+                    <li class="jingzhi div-jump list" style=" margin-top: 0.01rem;">
+                        <p><img src="./img/laba.png" alt="" style="margin-right: .45rem;"><span
+                                id="soundHoldNotice">基金挑花眼，怎么选择更省心？现金宝App“跟asdadasdasdadadasdas</span></p>
+                    </li>
+                    <li class="jingzhi div-jump list" style=" margin-top: 0.01rem;">
+                        <p><img src="./img/laba.png" alt="" style="margin-right: .45rem;"><span
+                                id="soundHoldNotice">基金挑花眼，怎么选择更省心？现金宝App“跟asdda</span></p>
+                    </li>
+                    <li class="jingzhi div-jump list" style=" margin-top: 0.01rem;">
+                        <p><img src="./img/laba.png" alt="" style="margin-right: .45rem;"><span
+                                id="soundHoldNotice">基金挑花眼，怎么选择更省心？现金宝App“跟dasdasd</span></p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="swiper-container" id="swiper1">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper_img        swiper-slide">
+                        <img src="./img/swiper_img.png" alt="">
+                    </a>
+                    <a href="#" class="swiper_img        swiper-slide">
+                        <img src="./img/swiper_img.png" alt="">
+                    </a>
+                    <a href="#" class="swiper_img        swiper-slide">
+
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="practical">
+            <div class="btn_title">
+                实用工具
+            </div>
+            <div class="practical_btn">
+                <a href="#">
+                    <i></i>
+                    <p>净值估算</p>
+                </a>
+                <a href="#">
+                    <i></i>
+                    <p>定投计算器</p>
+                </a>
+                <a href="#">
+                    <i></i>
+                    <p>养老计算器</p>
+                </a>
+                <a href="#">
+                    <i></i>
+                    <p>市场热力</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="service_sub">
+            <div class="service_title">
+                <p>服务订阅</p>
+                <p><span>实例说明</span><i class="question"></i></p>
+            </div>
+            <div class="switch">
+                <div class="switch_content switch1">
+                    <div class="content_l">
+                        <p>净值更新提醒</p>
+                        <p>每日净值更新时主动通知您查看</p>
+                    </div>
+                    <div class="content_r">
+                        <a href="javascript:;" class="switch_close"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="switch">
+                <div class="switch_content switch2">
+                    <div class="content_l">
+                        <p>基金动向跟踪</p>
+                        <p>您已订阅4只基金的动态推送<i>管理</i></p>
+                    </div>
+                    <div class="content_r">
+                        <a href="javascript:;" class="switch_close"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_btn">
+        <a href="#">
+            <img src="./img/footer1.png" alt="" >
+            <span class="active_color">服务</span>
+        </a>
+        <a href="#">
+            <img src="./img/footer_02.png" alt="">
+            <span>观点</span>
+        </a>
+        <a href="#">
+            <img src="./img/footer_03.png" alt="">
+            <span>福利</span>
+        </a>
+    </div>
+
+    <div class="mask">
+        <div class="answer">
+            <div class="answer_text">123123123123</div>
+            <a href="javascript:;" class="close">确定</a>
+        </div>
+    </div>
+
+    <!-- <a href="#" class="go_home">回首页</a> -->
+    <!-- <script type="text/javascript" src="https://static.99fund.com/js/stat/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://static.99fund.com/js/stat/stat_new.js"></script> -->
+
+    <script src="js/swiper.js"></script>
+    <script>
+        // 开启关闭眼睛
+        var flag = true;
+        $(".question").click(function () {
+            $(".mask").show();
+        });
+        $(".close").click(function () {
+            $(".mask").hide();
+        });
+        $(".eyes").click(function () {
+            if (flag) {
+                $(".eyes").css({
+                    "background": "url(img/closeEyes.png) no-repeat no-repeat",
+                    "background-size": "100% 100%"
+                });
+                $(".enshow").show();
+                $(".isshow").hide();
+                flag = false;
+            } else {
+                $(".eyes").css({
+                    "background": "url(img/openEyes.png) no-repeat no-repeat",
+                    "background-size": "100% 100%"
+                });
+                $(".enshow").hide();
+                $(".isshow").show();
+                flag = true;
+            }
+        });
+        // 上下滚动
+        $(document).ready(function () {
+            function scroll() {
+                $(".radio_play .wrap .list:eq(0)").animate({
+                    "margin-top": "-2.5rem"
+                }, 1000, function () {
+                    $(".radio_play .wrap .list:eq(0)").appendTo($(".radio_play .wrap"));
+                    $(".radio_play .wrap .list:last").css({
+                        "margin-top": '0'
+                    });
+                })
+                setTimeout(scroll, 4000)
+            }
+            if ($('.radio_play .wrap .list').length > 1) {
+                scroll();
+            }
+        });
+
+        // swiper轮播图
+        var mySwiper = new Swiper('#swiper1', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                disableOnInteraction: false
+            },
+            spaceBetween: 50,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    var _html = '';
+                    for (var i = 1; i <= total; i++) {
+                        if (current == i) {
+                            _html +=
+                                '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+                        } else {
+                            _html += '<span class="swiper-pagination-customs"></span>';
+                        }
+                    }
+                    return _html; //返回所有的页码html
+                }
+            }
+
+        })
+        var switchFlag1 = true;
+        var switchFlag2 = true;
+        $(".switch1 a").click(function () {
+            if (switchFlag1) {
+                $(this).removeClass("switch_close").addClass('switch_open')
+                switchFlag1 = false;
+            } else {
+                $(this).removeClass("switch_open").addClass('switch_close')
+                switchFlag1 = true;
+            }
+        })
+        $(".switch2 a").click(function () {
+            if (switchFlag2) {
+                $(this).removeClass("switch_close").addClass('switch_open')
+                switchFlag2 = false;
+            } else {
+                $(this).removeClass("switch_open").addClass('switch_close')
+                switchFlag2 = true;
+            }
+        })
+       
+    </script>
+</body>
+
+</html>

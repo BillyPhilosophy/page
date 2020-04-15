@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="GBK">-->
+    <meta charset="utf8">
+    <title>过期礼券</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/invalid_card_ticket.css">
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function () {
+            getFont();
+        }
+
+        function getFont() {
+            var screenWidth = oHtml.clientWidth;
+            if (screenWidth <= 320) {
+                oHtml.style.fontSize = '17.06px';
+            } else if (screenWidth >= 750) {
+                oHtml.style.fontSize = '40px';
+            } else {
+                oHtml.style.fontSize = screenWidth / (750 / 40) + 'px';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="content1_1">
+        <!-- 未使用 -->
+        <div class="qiehuan">
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                        <p class="third">满返券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <!-- <div class="hongbao_text">
+                        <div class="first"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="second"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div> -->
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span style="float:left;margin-top:0.2rem;"></span><i
+                                    class="justify">适用产品：汇添富中证互联网医疗指数（LOF）A (35687)</i></div>
+                            <div class="second"><span></span>满1000返10</div>
+                            <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                        <p class="third">满返券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao_text">
+                        <div class="four"><span></span>红包来源： 周年庆典活动</div>
+                        <div class="five"><span></span>有效期2017.07.01至2017.08.30</div>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="qiehuan_content">
+                <div class="icon"></div>
+                <div class="text">
+                    <div class="text_icon">
+                        <span class="first">￥</span>
+                        <span class="second">10</span>
+                        <p class="third">满返券</p>
+                    </div>
+                </div>
+                <div class="dashed"></div>
+                <div class="hongbao">
+                    <div class="hongbao">
+                        <div class="hongbao_text">
+                            <div class="first"><span style="float:left;margin-top:0.2rem;"></span><i
+                                    class="justify">适用产品：汇添富全球互联(25437)</i></div>
+                            <div class="second"><span></span>满1000返10</div>
+                            <div class="third"><span></span>有效期2017.07.01至2017.08.30</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

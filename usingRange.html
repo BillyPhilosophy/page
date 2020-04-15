@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>使用范围</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+   
+    <script>
+        // 相对字体大小设置
+        var oHtml = document.documentElement;
+        getFont();
+        window.onresize = function(){
+            getFont();
+        };
+        function getFont(){
+            var screenWidth = oHtml.clientWidth;
+            if(screenWidth <= 320){
+                oHtml.style.fontSize = '17.06px';
+            }else if(screenWidth >= 750){
+                oHtml.style.fontSize = '40px';
+            }else{
+                oHtml.style.fontSize = screenWidth/(750/40)+'px';
+            }
+        }
+    </script>
+    <style>
+        .red{
+            color: #fb5c5f !important;
+        }
+        .green{
+            color: #009944 !important;
+        }
+        .margin-t20{
+            margin-top: .5rem;
+        }
+        .group{
+            padding-left: .75rem;
+            background: #fff;
+        }
+        .group_title{
+            height: 2.25rem;
+            line-height: 2.25rem;
+            border-bottom: 1px #eee solid;
+        }
+        .group_title span {
+            vertical-align: middle;
+        }
+        .group_title span:nth-of-type(1){
+            font-size: .75rem;
+            /* font-weight: bold; */
+            color: #000;
+        }
+        .group_title span:nth-of-type(2){
+            font-size: .6rem;
+            margin-left: .25rem;
+        }
+        .content{
+            padding: .75rem 0;
+            overflow: hidden;
+        }
+        .content_l,.content_c,.content_r{
+            float: left;
+        }
+        .content_l p:nth-of-type(1),.content_c p:nth-of-type(1),.content_r  p:nth-of-type(1){
+            font-size: .6rem;
+        }
+        .content_l p:nth-of-type(2),.content_c p:nth-of-type(2),.content_r  p:nth-of-type(2){
+            font-size: .75rem;
+            margin-top: .5rem;
+            color: #000;
+        }
+        .content_l{
+            width: 34%;
+            text-align:left;
+        }
+        .content_c{
+            width: 28%;
+            text-align:center ;
+        }
+        .content_r{
+            width: 34%;
+            text-align:right ;
+            padding-right: 4%;
+        }
+        .content_r h4{
+            font-size: .75rem;
+            margin-top: .6rem;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="group">
+        <h2 class="group_title"><span>汇添富价值精选混合</span><span>519069</span></h2>
+        <div class="content">
+            <div class="content_l">
+                <p>单位净值(2018.09.28)</p>
+                <p><span>2.321</span><span class="red">(0.87%)</span></p>
+            </div>
+            <div class="content_c">
+                <p>近三个月收益率</p>
+                <p class="green">0.87%</p>
+            </div>
+            <div class="content_r">
+                <h4 class="red">即将开放</h4>
+            </div>
+        </div>
+    </div>
+    <div class="group margin-t20">
+        <h2 class="group_title"><span>汇添富价值精选混合</span><span>519069</span></h2>
+        <div class="content">
+            <div class="content_l">
+                <p>单位净值(2018.09.28)</p>
+                <p><span>2.321</span><span class="red">(0.87%)</span></p>
+            </div>
+            <div class="content_c">
+                <p>近三个月收益率</p>
+                <p class="green">0.87%</p>
+            </div>
+            <div class="content_r">
+                <p>申购费率</p>
+                <p><s>1.5%</s> <span class="red">0.015%</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <a href="#" class="go_home">回首页</a> -->
+<!-- <script type="text/javascript" src="https://static.99fund.com/js/stat/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://static.99fund.com/js/stat/stat_new.js"></script> -->
+
+</body>
+</html>
